@@ -91,7 +91,7 @@ The notebook will:
 4. Run LOPO-CV experiments for absolute-score prediction.
 5. Run LOPO-CV experiments for delta-target prediction.
 6. Save result tables and figures.
-7. Run Friedman statistical tests with Kendall's W as the effect-size measure.
+7. Run Friedman statistical tests and Nemenyi post-hoc comparisons for targets where the Friedman test is significant.
 8. Produce exploratory SHAP summaries for LightGBM.
 
 ---
@@ -108,6 +108,8 @@ outputs/tables/lopo_metrics_summary_delta.csv
 outputs/tables/lopo_metrics_per_participant.csv
 outputs/tables/lopo_metrics_per_participant_delta.csv
 outputs/tables/friedman_overall_tests.csv
+outputs/tables/nemenyi_average_ranks.csv
+outputs/tables/nemenyi_posthoc_pairs.csv
 outputs/tables/baselines.csv
 ```
 
@@ -152,7 +154,9 @@ To reproduce the results as closely as possible:
 
 ## Statistical testing
 
-The notebook reports non-parametric Friedman tests across the 18 LOPO folds. Kendall's W is reported as the effect-size measure for the Friedman test.
+The notebook reports non-parametric Friedman tests across the 18 LOPO folds. The Friedman test is used as an overall non-parametric comparison of model ranks for each target.
+
+When the Friedman test rejects the null hypothesis at the 0.05 significance level, Nemenyi post-hoc comparisons are reported using average model ranks and the critical difference. The Nemenyi test is used to identify which model-rank differences exceed the critical difference.
 
 The statistical testing is intended to support a cautious interpretation of the model comparisons, since the fold-level standard deviations are large relative to the mean MAE differences between models.
 
