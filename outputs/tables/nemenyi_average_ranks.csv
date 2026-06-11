@@ -1,0 +1,28 @@
+setting,target,model,average_rank,n_folds,n_models,friedman_p_value,nemenyi_cd_0.05
+absolute_score,SIS,Naive Mean,2.2222,18,4,0.7055,1.1055
+absolute_score,SIS,ElasticNet,2.5,18,4,0.7055,1.1055
+absolute_score,SIS,Random Forest,2.5556,18,4,0.7055,1.1055
+absolute_score,SIS,LightGBM,2.7222,18,4,0.7055,1.1055
+absolute_score,OHS,ElasticNet,1.7778,18,4,0.0007,1.1055
+absolute_score,OHS,Naive Mean,2.0556,18,4,0.0007,1.1055
+absolute_score,OHS,Random Forest,2.7778,18,4,0.0007,1.1055
+absolute_score,OHS,LightGBM,3.3889,18,4,0.0007,1.1055
+absolute_score,OKS,ElasticNet,2.2778,18,4,0.7212,1.1055
+absolute_score,OKS,Random Forest,2.3889,18,4,0.7212,1.1055
+absolute_score,OKS,LightGBM,2.6111,18,4,0.7212,1.1055
+absolute_score,OKS,Naive Mean,2.7222,18,4,0.7212,1.1055
+delta_target,SIS Delta,ElasticNet,2.0,18,5,0.0,1.4378
+delta_target,SIS Delta,Naive Mean,2.1111,18,5,0.0,1.4378
+delta_target,SIS Delta,Random Forest,2.9444,18,5,0.0,1.4378
+delta_target,SIS Delta,LightGBM,3.6667,18,5,0.0,1.4378
+delta_target,SIS Delta,Ridge (tuned),4.2778,18,5,0.0,1.4378
+delta_target,OHS Delta,Naive Mean,2.3333,18,5,0.011,1.4378
+delta_target,OHS Delta,ElasticNet,2.3333,18,5,0.011,1.4378
+delta_target,OHS Delta,LightGBM,3.1111,18,5,0.011,1.4378
+delta_target,OHS Delta,Random Forest,3.3333,18,5,0.011,1.4378
+delta_target,OHS Delta,Ridge (tuned),3.8889,18,5,0.011,1.4378
+delta_target,OKS Delta,Naive Mean,2.2778,18,5,0.0002,1.4378
+delta_target,OKS Delta,LightGBM,2.5,18,5,0.0002,1.4378
+delta_target,OKS Delta,ElasticNet,2.8333,18,5,0.0002,1.4378
+delta_target,OKS Delta,Random Forest,2.8889,18,5,0.0002,1.4378
+delta_target,OKS Delta,Ridge (tuned),4.5,18,5,0.0002,1.4378

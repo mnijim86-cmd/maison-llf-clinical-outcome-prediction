@@ -1,0 +1,37 @@
+setting,target,model_1,rank_1,model_2,rank_2,rank_difference,critical_difference_0.05,significant
+absolute_score,OHS,ElasticNet,1.7778,Naive Mean,2.0556,0.2778,1.1055,False
+absolute_score,OHS,ElasticNet,1.7778,Random Forest,2.7778,1.0,1.1055,False
+absolute_score,OHS,ElasticNet,1.7778,LightGBM,3.3889,1.6111,1.1055,True
+absolute_score,OHS,Naive Mean,2.0556,Random Forest,2.7778,0.7222,1.1055,False
+absolute_score,OHS,Naive Mean,2.0556,LightGBM,3.3889,1.3333,1.1055,True
+absolute_score,OHS,Random Forest,2.7778,LightGBM,3.3889,0.6111,1.1055,False
+delta_target,SIS Delta,ElasticNet,2.0,Naive Mean,2.1111,0.1111,1.4378,False
+delta_target,SIS Delta,ElasticNet,2.0,Random Forest,2.9444,0.9444,1.4378,False
+delta_target,SIS Delta,ElasticNet,2.0,LightGBM,3.6667,1.6667,1.4378,True
+delta_target,SIS Delta,ElasticNet,2.0,Ridge (tuned),4.2778,2.2778,1.4378,True
+delta_target,SIS Delta,Naive Mean,2.1111,Random Forest,2.9444,0.8333,1.4378,False
+delta_target,SIS Delta,Naive Mean,2.1111,LightGBM,3.6667,1.5556,1.4378,True
+delta_target,SIS Delta,Naive Mean,2.1111,Ridge (tuned),4.2778,2.1667,1.4378,True
+delta_target,SIS Delta,Random Forest,2.9444,LightGBM,3.6667,0.7222,1.4378,False
+delta_target,SIS Delta,Random Forest,2.9444,Ridge (tuned),4.2778,1.3333,1.4378,False
+delta_target,SIS Delta,LightGBM,3.6667,Ridge (tuned),4.2778,0.6111,1.4378,False
+delta_target,OHS Delta,Naive Mean,2.3333,ElasticNet,2.3333,0.0,1.4378,False
+delta_target,OHS Delta,Naive Mean,2.3333,LightGBM,3.1111,0.7778,1.4378,False
+delta_target,OHS Delta,Naive Mean,2.3333,Random Forest,3.3333,1.0,1.4378,False
+delta_target,OHS Delta,Naive Mean,2.3333,Ridge (tuned),3.8889,1.5556,1.4378,True
+delta_target,OHS Delta,ElasticNet,2.3333,LightGBM,3.1111,0.7778,1.4378,False
+delta_target,OHS Delta,ElasticNet,2.3333,Random Forest,3.3333,1.0,1.4378,False
+delta_target,OHS Delta,ElasticNet,2.3333,Ridge (tuned),3.8889,1.5556,1.4378,True
+delta_target,OHS Delta,LightGBM,3.1111,Random Forest,3.3333,0.2222,1.4378,False
+delta_target,OHS Delta,LightGBM,3.1111,Ridge (tuned),3.8889,0.7778,1.4378,False
+delta_target,OHS Delta,Random Forest,3.3333,Ridge (tuned),3.8889,0.5556,1.4378,False
+delta_target,OKS Delta,Naive Mean,2.2778,LightGBM,2.5,0.2222,1.4378,False
+delta_target,OKS Delta,Naive Mean,2.2778,ElasticNet,2.8333,0.5556,1.4378,False
+delta_target,OKS Delta,Naive Mean,2.2778,Random Forest,2.8889,0.6111,1.4378,False
+delta_target,OKS Delta,Naive Mean,2.2778,Ridge (tuned),4.5,2.2222,1.4378,True
+delta_target,OKS Delta,LightGBM,2.5,ElasticNet,2.8333,0.3333,1.4378,False
+delta_target,OKS Delta,LightGBM,2.5,Random Forest,2.8889,0.3889,1.4378,False
+delta_target,OKS Delta,LightGBM,2.5,Ridge (tuned),4.5,2.0,1.4378,True
+delta_target,OKS Delta,ElasticNet,2.8333,Random Forest,2.8889,0.0556,1.4378,False
+delta_target,OKS Delta,ElasticNet,2.8333,Ridge (tuned),4.5,1.6667,1.4378,True
+delta_target,OKS Delta,Random Forest,2.8889,Ridge (tuned),4.5,1.6111,1.4378,True
