@@ -172,19 +172,6 @@ The Nemenyi test is used to identify which model-rank differences exceed the cri
 
 ## Citation
 
-If you use this repository, please cite the MAISON-LLF dataset paper and the official dataset record.
-
-**Dataset paper:**
-
-Abedi, A., Chu, C. H., & Khan, S. S. (2025). Multimodal sensor dataset for monitoring older adults post lower limb fractures in community settings. *Scientific Data, 12*, 733. https://doi.org/10.1038/s41597-025-05069-7
-
-**Dataset record:**
-
-Abedi, A., Chu, C., & Khan, S. S. (2025). MAISON-LLF: Multimodal Sensor Dataset for Monitoring Older Adults Post Lower-Limb Fractures in Community Settings. Zenodo. https://doi.org/10.5281/zenodo.17943110
-
-**MAISON-LLF Data Challenge page:**
-
-https://sites.google.com/view/arial2026/maison-data-challege
 
 ---
 
