@@ -1,10 +1,14 @@
 setting,target,model_1,rank_1,model_2,rank_2,rank_difference,critical_difference_0.05,significant
-absolute_score,OHS,ElasticNet,1.7778,Naive Mean,2.0556,0.2778,1.1055,False
-absolute_score,OHS,ElasticNet,1.7778,Random Forest,2.7778,1.0,1.1055,False
-absolute_score,OHS,ElasticNet,1.7778,LightGBM,3.3889,1.6111,1.1055,True
-absolute_score,OHS,Naive Mean,2.0556,Random Forest,2.7778,0.7222,1.1055,False
-absolute_score,OHS,Naive Mean,2.0556,LightGBM,3.3889,1.3333,1.1055,True
-absolute_score,OHS,Random Forest,2.7778,LightGBM,3.3889,0.6111,1.1055,False
+absolute_score,OHS,ElasticNet,1.9444,Naive Mean,2.2222,0.2778,1.4378,False
+absolute_score,OHS,ElasticNet,1.9444,Random Forest,3.1667,1.2222,1.4378,False
+absolute_score,OHS,ElasticNet,1.9444,LightGBM,3.7778,1.8333,1.4378,True
+absolute_score,OHS,ElasticNet,1.9444,Ridge (tuned),3.8889,1.9444,1.4378,True
+absolute_score,OHS,Naive Mean,2.2222,Random Forest,3.1667,0.9444,1.4378,False
+absolute_score,OHS,Naive Mean,2.2222,LightGBM,3.7778,1.5556,1.4378,True
+absolute_score,OHS,Naive Mean,2.2222,Ridge (tuned),3.8889,1.6667,1.4378,True
+absolute_score,OHS,Random Forest,3.1667,LightGBM,3.7778,0.6111,1.4378,False
+absolute_score,OHS,Random Forest,3.1667,Ridge (tuned),3.8889,0.7222,1.4378,False
+absolute_score,OHS,LightGBM,3.7778,Ridge (tuned),3.8889,0.1111,1.4378,False
 delta_target,SIS Delta,ElasticNet,2.0,Naive Mean,2.1111,0.1111,1.4378,False
 delta_target,SIS Delta,ElasticNet,2.0,Random Forest,2.9444,0.9444,1.4378,False
 delta_target,SIS Delta,ElasticNet,2.0,LightGBM,3.6667,1.6667,1.4378,True

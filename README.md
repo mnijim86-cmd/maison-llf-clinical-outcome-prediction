@@ -7,7 +7,7 @@ The analysis focuses on two main strategies:
 1. **Rolling-window feature enrichment**: converts daily sensor readings into short- and medium-term temporal summaries.
 2. **Delta-target analysis**: compares absolute clinical-score prediction with change-from-baseline prediction.
 
-The notebook evaluates ElasticNet, LightGBM, and Random Forest models against a Naive Mean baseline for predicting three clinical outcome scores:
+The notebook evaluates ElasticNet, LightGBM, and Random Forest models against a Naive Mean baseline for predicting three clinical outcome scores. A tuned Ridge model is also included as an exploratory reference model in the absolute-versus-delta and statistical comparison results:
 
 - **SIS**: Social Isolation Scale
 - **OHS**: Oxford Hip Score
@@ -91,7 +91,7 @@ The notebook will:
 4. Run LOPO-CV experiments for absolute-score prediction.
 5. Run LOPO-CV experiments for delta-target prediction.
 6. Save result tables and figures.
-7. Run Friedman statistical tests and Nemenyi post-hoc comparisons for targets where the Friedman test is significant.
+7. Run Friedman statistical tests and Nemenyi post-hoc comparisons using the same five-model comparison set: Naive Mean, Ridge, ElasticNet, Random Forest, and LightGBM.
 8. Produce exploratory SHAP summaries for LightGBM.
 
 ---
@@ -156,9 +156,17 @@ To reproduce the results as closely as possible:
 
 The notebook reports non-parametric Friedman tests across the 18 LOPO folds. The Friedman test is used as an overall non-parametric comparison of model ranks for each target.
 
-When the Friedman test rejects the null hypothesis at the 0.05 significance level, Nemenyi post-hoc comparisons are reported using average model ranks and the critical difference. The Nemenyi test is used to identify which model-rank differences exceed the critical difference.
+To keep the statistical comparison consistent, the same five models are compared in both the absolute-score and delta-target settings:
 
-The statistical testing is intended to support a cautious interpretation of the model comparisons, since the fold-level standard deviations are large relative to the mean MAE differences between models.
+Naive Mean
+Ridge (tuned)
+ElasticNet
+Random Forest
+LightGBM
+
+When the Friedman test rejects the null hypothesis at the 0.05 significance level, Nemenyi post-hoc comparisons are reported using average model ranks and the critical difference. Since five models are compared, (k=5), (N=18), and (q_{\alpha}=2.728), giving a critical difference of approximately (CD=1.44).
+
+The Nemenyi test is used to identify which model-rank differences exceed the critical difference. The statistical testing supports a cautious interpretation of the model comparisons, since the fold-level standard deviations are large relative to the mean MAE differences between models.
 
 ---
 
